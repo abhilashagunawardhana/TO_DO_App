@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".viewmodel.AddTodoActivity">
+    tools:context=".viewmodel.UpdateActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="200dp"
-        android:background=" @drawable/round_layout ">
+        android:background="@drawable/round_layout">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,12 +25,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:gravity="center"
-                android:text="Add Task"
+                android:text="Edit Task"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTitle"
+                android:id="@+id/editTextTitleEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="80dp"
@@ -40,7 +40,7 @@
                 android:inputType="text" />
 
             <EditText
-                android:id="@+id/editTextDescription"
+                android:id="@+id/editTextDescriptionEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -50,7 +50,7 @@
                 android:inputType="textMultiLine" />
 
             <EditText
-                android:id="@+id/editTextDueDate"
+                android:id="@+id/editTextDueDateEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -61,7 +61,7 @@
                 android:hint="Due Date" />
 
             <EditText
-                android:id="@+id/editTextDueTime"
+                android:id="@+id/editTextDueTimeEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -72,16 +72,18 @@
                 android:hint="Time" />
 
             <Button
-                android:id="@+id/buttonAddTodo"
+                android:id="@+id/buttonEditTodo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/colorPrimary"
-                android:text="Add Todo" />
+                android:text="Update Todo" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Your EditText fields and Button here -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
