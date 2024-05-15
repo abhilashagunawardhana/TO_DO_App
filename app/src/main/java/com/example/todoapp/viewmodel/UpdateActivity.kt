@@ -47,15 +47,34 @@ class UpdateActivity : AppCompatActivity() {
             val newDate = binding.editTextDueDateEdit.text.toString()
             val newTime = binding.editTextDueTimeEdit.text.toString()
 
-            // Create a new com.example.todo.model.Todo object with updated values
-            val updatedTodo = Todo(todoId, newTitle, newDescription, newDate, newTime)
+            // Validate input fields in one if statement
+            if (newTitle.isNotEmpty() && newDescription.isNotEmpty() && newDate.isNotEmpty() && newTime.isNotEmpty()) {
+                // Create a new com.example.todo.model.Todo object with updated values
+                val updatedTodo = Todo(todoId, newTitle, newDescription, newDate, newTime)
 
-            // Update the todo item in the database
-            db.updateTodo(updatedTodo)
+                // Update the todo item in the database
+                db.updateTodo(updatedTodo)
 
-            // Finish the activity and display a toast message
-            finish()
-            Toast.makeText(this, "Changes saved", Toast.LENGTH_SHORT).show()
+                // Finish the activity and display a toast message
+                finish()
+                Toast.makeText(this, "Changes saved", Toast.LENGTH_SHORT).show()
+            } else {
+                // Display appropriate error messages
+                if (newTitle.isEmpty()) {
+                    Toast.makeText(this, "Title cannot be empty", Toast.LENGTH_SHORT).show()
+                }
+                if (newDescription.isEmpty()) {
+                    Toast.makeText(this, "Description cannot be empty", Toast.LENGTH_SHORT).show()
+                }
+                if (newDate.isEmpty()) {
+                    Toast.makeText(this, "Due date cannot be empty", Toast.LENGTH_SHORT).show()
+                }
+                if (newTime.isEmpty()) {
+                    Toast.makeText(this, "Due time cannot be empty", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+
         }
     }
 }

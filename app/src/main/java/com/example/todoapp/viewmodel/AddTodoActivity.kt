@@ -43,7 +43,6 @@ class AddTodoActivity : AppCompatActivity() {
                 Toast.makeText(this@AddTodoActivity, "Todo added successfully", Toast.LENGTH_SHORT).show()
             } else {
                 // Show an error message or toast indicating that all fields are required
-                // For example:
                 Toast.makeText(this@AddTodoActivity, "All fields are required", Toast.LENGTH_SHORT).show()
             }
         }

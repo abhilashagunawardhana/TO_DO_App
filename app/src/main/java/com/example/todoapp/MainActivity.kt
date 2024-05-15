@@ -10,11 +10,11 @@ import com.example.todoapp.viewmodel.HomeActivity
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
 
         val gsbutton: Button = findViewById(R.id.gsbutton)
         gsbutton.setOnClickListener {
