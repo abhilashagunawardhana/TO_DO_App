@@ -13,13 +13,13 @@
         android:theme="@style/Theme.TODOApp"
         tools:targetApi="31">
         <activity
-            android:name=".viewmodel.UpdateActivity"
+            android:name=".UpdateActivity"
             android:exported="false" />
         <activity
-            android:name=".viewmodel.AddTodoActivity"
+            android:name=".AddTodoActivity"
             android:exported="false" />
         <activity
-            android:name=".viewmodel.HomeActivity"
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

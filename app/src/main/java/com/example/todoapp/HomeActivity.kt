@@ -1,4 +1,4 @@
-package com.example.todoapp.viewmodel
+package com.example.todoapp
 
 import android.content.Intent
 import android.os.Bundle

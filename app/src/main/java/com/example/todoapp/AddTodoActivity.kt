@@ -1,4 +1,4 @@
-package com.example.todoapp.viewmodel
+package com.example.todoapp
 
 import com.example.todoapp.model.Todo
 import com.example.todoapp.database.TodoDatabaseHelper
